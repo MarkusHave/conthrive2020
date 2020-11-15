@@ -1,0 +1,24 @@
+---
+stages:
+  - purge
+  - build
+
+docker-push:
+  image: docker/compose
+  stage: purge
+  tags: ["docker"]
+  script:
+    - docker-compose rm -fs
+  allow_failure: true
+
+docker-build:
+  image: docker/compose
+  stage: build
+  tags: ["docker"]
+  script:
+    - printf "REACT_APP_API_URL=%s\n" "$REACT_APP_API_URL" > frontend/.env
+    - docker-compose build --no-cache
+    - docker-compose up -d
+    - docker cp scripts/init.sh postgres:/init.sh
+    - docker exec -i postgres chmod +x /init.sh
+    - docker exec -i postgres /init.sh

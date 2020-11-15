@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.loading {
+  margin-top: 15%;
+  text-align: center;
+}
+
+/* FORMS */
+form.loginForm {
+  margin-top: 15%;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 150%;
+}
+
+form.loginForm input {
+  color: rgb(0, 0, 0);
+  font-size: 250%;
+  text-align: center;
+}
+
+form.loginForm button {
+  margin: 0.5em;
+  font-size: 125%;
+  width: 300px;
+}
+
+form.loginForm h3 {
+  color: rgb(255, 25, 25);
+  margin: 0;
+  padding: 0;
+}
+
+form.loginForm p {
+  display: inline-block;
+  color: #3f51b5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* FILE UPLOAD ZONE */
+#manual-file-upload-icon:hover {
+  cursor: pointer;
+}
+
+div.upload-container,
+div.upload-options-container {
+  text-align: center;
+  justify-content: center;
+  font-size: 200%;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  color: #e74c3c;
+}
+
+div.upload-options-container {
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: 1em 0em;
+  background-color: rgba(233, 233, 233, 1);
+  border-radius: 0%;
+}
+
+.profile-view-container {
+  color: black;
+  display: table;
+}
+
+div.drop-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(20, 30, 120, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+.description-box {
+  width: 50%;
+}
+
+.upload-progress {
+  margin: 40px 0px;
+}
+
+div.highlight {
+  background-color: rgba(20, 30, 120, 0.5);
+}
+
+#upload-radio-group {
+  margin-left: 42%;
+  margin-top: 25px;
+}
+
+#description-box {
+  color: black;
+  width: 60%;
+}
+
+.preview-img {
+  height: 300px;
+}
+
+/* MAIN MENU HEADER */
+.header {
+  background-color: rgb(255, 255, 255);
+}
+
+.info {
+  padding: 0;
+}
+
+.info h1 {
+  color: orange;
+  font-size: 36px;
+}
+
+.info p {
+  font-weight: bold;
+}
+
+.info button {
+  background-color: #e74c3c;
+  font-size: 36px;
+  padding: 0.5em 1em;
+}
+
+.banner {
+  background-image: url("./img/etusivu.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    background-size: cover;
+  }
+  .mobile-hack {
+    display: block;
+  }
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+}
+.jumbotron .h1,
+.jumbotron h1 {
+  color: inherit;
+}
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.jumbotron > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+
+.jumbotron {
+  background-color: transparent;
+  padding-top: 90px;
+}
+.jumbotron p.big {
+  line-height: 21px;
+  border-width: 0px;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 6px;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ffffff;
+  -webkit-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+  -moz-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+  -ms-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+  padding-top: 10px;
+}
+
+.strokeme {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 64px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.jumbotron h1.small {
+  line-height: 88px;
+  border-width: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 62px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ffffff;
+  -webkit-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+  -moz-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+  -ms-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+}
+
+p.cta-sub-title {
+  font-size: 28px;
+  color: gray;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0px 10%;
+}
+
+#cancelUploadButton,
+#submitUploadButton {
+  background-color: #e74c3c;
+  font-size: 36px;
+  padding: 0.5em 1em;
+}
+
+#manual-file-upload-button {
+  color: #e74c3c;
+}
+
+.profile-img {
+  padding: 5%;
+  width: 80%;
+  max-height: 400px;
+}
+
+.profile-text {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-text p {
+  display: block;
+}

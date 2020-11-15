@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "asd",
+    "password": "asd",
+    "database": "asd",
+    "host": "postgres",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "asd",
+    "password": "asd",
+    "database": "asd",
+    "host": "10.18.0.5",
+    "dialect": "postgres"
+  }
+}
